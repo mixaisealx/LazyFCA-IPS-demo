@@ -1,6 +1,6 @@
 # Ленивый анализ формальных понятий с помощью интервальных узорных структур
 
-[![License](https://img.shields.io/badge/LICENSE-MIT-green?style=flat)](/LICENSE)  [![Version](https://img.shields.io/badge/VERSION-DEMO-yellow?style=flat)](https://github.com/MixailAlexeevich/Microservices.MicroServer/releases)
+[![License](https://img.shields.io/badge/LICENSE-MIT-green?style=flat)](/LICENSE)  [![Version](https://img.shields.io/badge/VERSION-DEMO-yellow?style=flat)](https://github.com/mixaisealx/LazyFCA-IPS-demo/releases)
 ### :capital_abcd: [English version](/README.md)
 
 ## Введение
@@ -31,11 +31,14 @@
 5. Выполняется подсчёт отработавших положительных гипотез и число отработавших отрицательных гипотез.
 
 Транзакция классифицируется как мошенническая, если: 
+
 $$\frac{a}{c}>\frac{b}{d},$$
+
 где `a` - кол-во *пересечений* с гипотезами о достоверно мошеннических транзакциях, `c` - кол-во гипотез о достоверно мошеннических транзакциях, `b` - кол-во *пересечений* с гипотезами об обычных транзакциях, `d` - кол-во гипотез об обычных транзакциях.
 
 Процент уверенности в вердикте вычисляется следующим образом (обозначения те же):
-$$P=\left(1-\frac{\operatorname{min}\left(\frac{a}{c},\frac{b}{d}\right)}{\operatorname{max}\left(\frac{a}{c},\frac{b}{d}\right)}\right)*100$$
+
+$$P=\left(1-\frac{\mathop{\text{min}}\left(\frac{a}{c},\frac{b}{d}\right)}{\mathop{\text{max}}\left(\frac{a}{c},\frac{b}{d}\right)}\right)*100$$
 
 ## Запуск
 

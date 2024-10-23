@@ -1,6 +1,6 @@
 # Lazy Formal Concept Analysis via Interval Pattern Structures
 
-[![License](https://img.shields.io/badge/LICENSE-MIT-green?style=flat)](/LICENSE)  [![Version](https://img.shields.io/badge/VERSION-DEMO-yellow?style=flat)](https://github.com/MixailAlexeevich/Microservices.MicroServer/releases)
+[![License](https://img.shields.io/badge/LICENSE-MIT-green?style=flat)](/LICENSE)  [![Version](https://img.shields.io/badge/VERSION-DEMO-yellow?style=flat)](https://github.com/mixaisealx/LazyFCA-IPS-demo/releases)
 ### :capital_abcd: [Версия на русском языке](/README-ru.md)
 
 ## Introduction
@@ -31,11 +31,14 @@ The classification algorithm is as follows:
 5. The calculation of spent positive hypotheses and the number of spent negative hypotheses is performed.
 
 A transaction is classified as fraudulent if: 
+
 $$\frac{a}{c}>\frac{b}{d},$$
+
 where `a` is the number of *intersections* with hypotheses about reliably fraudulent transactions, `c` is the number of hypotheses about reliably fraudulent transactions, `b` is the number of *intersections* with hypotheses about ordinary transactions, `d` is the number of hypotheses about ordinary transactions.
 
 The percentage of confidence in the verdict is calculated as follows (the notation is the same):
-$$P=\left(1-\frac{\operatorname{min}\left(\frac{a}{c},\frac{b}{d}\right)}{\operatorname{max}\left(\frac{a}{c},\frac{b}{d}\right)}\right)*100$$
+
+$$P=\left(1-\frac{\mathop{\text{min}}\left(\frac{a}{c},\frac{b}{d}\right)}{\mathop{\text{max}}\left(\frac{a}{c},\frac{b}{d}\right)}\right)*100$$
 
 ## Test run
 
